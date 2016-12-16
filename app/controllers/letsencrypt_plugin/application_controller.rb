@@ -6,7 +6,7 @@ module LetsencryptPlugin
     def index
       # There is only one item in DB with challenge response from our task
       # we will use it to render plain text response
-      render plain: @response.response, status: :ok
+      render text: @response.response, status: :ok, :layout => false
     end
 
     private

@@ -1,7 +1,7 @@
 module LetsencryptPlugin
   class ApplicationController < ActionController::Base
-    before_action :challenge_response, only: [:index]
-    before_action :validate_length, only: [:index]
+    before_filter :challenge_response, only: [:index]
+    before_filter :validate_length, only: [:index]
 
     def index
       # There is only one item in DB with challenge response from our task

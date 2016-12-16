@@ -22,8 +22,8 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 2.1.0'
 
-  s.add_dependency 'rails', '>= 4.2', '< 5.1'
-  s.add_dependency 'acme-client', '~> 0.4.1'
+  s.add_dependency 'rails', '>= 3.2.22'
+  s.add_dependency 'acme-client'
   s.add_development_dependency 'minitest'
   s.add_development_dependency 'minitest-rails'
   s.add_development_dependency 'minitest-reporters'
